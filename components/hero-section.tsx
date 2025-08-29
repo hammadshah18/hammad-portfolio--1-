@@ -51,7 +51,7 @@ export default function HeroSection() {
                 <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">MUHAMMAD HAMMAD</h1>
                 <div className="text-2xl md:text-3xl text-muted-foreground font-light h-12 flex items-center">
                   <span className="text-primary">{typedText}</span>
-                  <span className="animate-pulse text-primary ml-1">|</span>
+                  <span className="animate-pulse text-primary ml-1"></span>
                 </div>
               </div>
             </div>
@@ -73,9 +73,12 @@ export default function HeroSection() {
                 variant="outline"
                 size="lg"
                 className="group bg-transparent border-primary text-primary hover:bg-primary hover:text-white"
+                asChild
               >
-                <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                Download CV
+                <Link href="/Hammad_CV_J.pdf" download>
+                  <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+                  Download CV
+                </Link>
               </Button>
             </div>
           </div>
