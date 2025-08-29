@@ -86,7 +86,7 @@ export default function HeroSection() {
             <div className="relative lg:order-2">
             <div className="relative w-full max-w-lg mx-auto h-96">
          <DotLottieReact
-      src="https://lottie.host/embed/7843121d-76e8-462d-bd11-36b113216646/riMwNkh6xF.lottie"
+      src="https://app.lottiefiles.com/share/be80cc19-7c53-4816-aed6-361c77fa96cd"
       loop
       autoplay
     />
