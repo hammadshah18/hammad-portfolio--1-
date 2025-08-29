@@ -74,10 +74,10 @@ export default function AboutPage() {
   ]
 
   const stats = [
-    { label: "Projects Completed", value: "15+", icon: Code },
+    { label: "Projects Completed", value: "7+", icon: Code },
     { label: "Technologies Mastered", value: "16+", icon: Database },
-    { label: "Years Learning", value: "3+", icon: TrendingUp },
-    { label: "ML Models Built", value: "8+", icon: Brain },
+    { label: "Years Learning", value: "2+", icon: TrendingUp },
+    { label: "ML Models Built", value: "5+", icon: Brain },
   ]
   
   return (
