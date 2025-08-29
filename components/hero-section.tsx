@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Download } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import Lottie from "lottie-react"
+import animationData from '../public/animation.json'
+
 
 export default function HeroSection() {
   const [typedText, setTypedText] = useState("")
@@ -85,11 +87,11 @@ export default function HeroSection() {
 
             <div className="relative lg:order-2">
             <div className="relative w-full max-w-lg mx-auto h-96">
-         <DotLottieReact
-      src="https://app.lottiefiles.com/share/be80cc19-7c53-4816-aed6-361c77fa96cd"
-      loop
-      autoplay
-    />
+         <Lottie
+        animationData={animationData}
+        loop
+        autoplay
+      />
              
             </div>
           </div>
