@@ -69,8 +69,8 @@ export default function PortfolioPage() {
       technologies: ["Python", "Scikit-learn", "Pandas", "Machine Learning", "Regression"],
       category: "Machine Learning",
       image: "/car-price-prediction-machine-learning-model.png",
-      demoLink: "https://github.com/hammadshah18/Car-Price-Predictor",
-      githubLink: "https://github.com/hammadshah18/Car-Price-Predictor",
+      demoLink: "https://carpricepredictor-jvdrasjavyzvtst4goa56u.streamlit.app/",
+      githubLink: "https://github.com/hammadshah18/CarPricePredictor",
     },
     {
       title: "Movie Recommender System",
