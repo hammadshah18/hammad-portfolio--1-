@@ -17,6 +17,7 @@ export default function PortfolioPage() {
   const toRotate = ["Portfolio", "Projects", "Work"]
   const period = 2000
 
+
   useEffect(() => {
     const ticker = setInterval(() => {
       tick()
@@ -98,8 +99,8 @@ export default function PortfolioPage() {
       technologies: ["Python", "Scikit-learn", "Streamlit", "Real Estate Analytics", "Regression"],
       category: "Machine Learning",
       image: "/house-price-prediction-karachi-real-estate.png",
-      demoLink: "https://github.com/hammadshah18/Karachi-House-Price-Predictor",
-      githubLink: "https://github.com/hammadshah18/Karachi-House-Price-Predictor",
+      demoLink: "https://karachihousepricepredictor-5suw5z6fhsc5ibwtdxgj4q.streamlit.app/",
+      githubLink: "https://github.com/hammadshah18/KarachiHousePricePredictor",
     },
   ]
 
