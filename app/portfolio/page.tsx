@@ -102,6 +102,16 @@ export default function PortfolioPage() {
       demoLink: "https://karachihousepricepredictor-5suw5z6fhsc5ibwtdxgj4q.streamlit.app/",
       githubLink: "https://github.com/hammadshah18/KarachiHousePricePredictor",
     },
+    {
+      title: "Email Spam Classifier",
+      description:
+        "Developed a Machine Learning model to Classify an Email Spam or Not Spam , Performed data preprocessing, feature engineering, and model evaluation to ensure accuracy. Built an interactive interface for users to input for type an message to check Email Spam or Not,Use Naive Bayes Classifer for better accuracy ",
+      technologies: ["Python", "Scikit-learn", "Streamlit", "Classifier"],
+      category: "Machine Learning",
+      image: "/email-Spam-Classifier.png",
+      demoLink: "https://emailspamclassifier-roogpzwt4pmtqrylmxbage.streamlit.app/",
+      githubLink: "https://github.com/hammadshah18/EmailSpamClassifier",
+    },
   ]
 
   const categories = ["All", "Machine Learning", "Data Visualization", "API Development"]
