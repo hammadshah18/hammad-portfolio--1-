@@ -112,9 +112,19 @@ export default function PortfolioPage() {
       demoLink: "https://emailspamclassifier-roogpzwt4pmtqrylmxbage.streamlit.app/",
       githubLink: "https://github.com/hammadshah18/EmailSpamClassifier",
     },
+    {
+      title: "UK-Universities Analysis Dashboard",
+      description:
+        "I developed a UK University Review Sentiment Analysis Dashboard using Machine Learning (XGBoost + TF-IDF) and deployed it with StreamlitPredicts sentiment (Negative, Neutral, Positive) from student reviews.Predicts ratings based on text feedback.Provides visual dashboards with graphs showing sentiment trends, top universities, and rating distributions ",
+      technologies: ["NLP", "ML", "Streamlit", "XGBoost + TF-IDF"],
+      category: "NLP",
+      image: "/uk-Analysis-pic.png",
+      demoLink: "https://uk-universities-sentiment-analysis-rating-prediction-dashboard.streamlit.app/",
+      githubLink: "https://github.com/hammadshah18/UK-Universities-Sentiment-Analysis-Rating-Prediction-Dashboard",
+    },
   ]
 
-  const categories = ["All", "Machine Learning", "Data Visualization", "API Development"]
+  const categories = ["All", "Machine Learning","NLP" ,"Data Visualization", "API Development"]
 
   const filteredProjects =
     activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)
