@@ -99,11 +99,11 @@ export default function ResumePage() {
                     style={{ animationDelay: "500ms" }}
                   ></div>
                   <div className="absolute left-4 w-5 h-5 bg-accent rounded-full shadow-lg shadow-accent/50"></div>
-                  <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-6 rounded-xl border-l-4 border-accent group-hover:shadow-xl transition-all duration-500">
-                    <h3 className="font-bold text-xl text-accent mb-2 group-hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-6 rounded-xl border-l-4 border-primary group-hover:shadow-xl transition-all duration-500">
+                    <h3 className="font-bold text-xl text-primary mb-2 group-hover:scale-105 transition-transform duration-300">
                       Intermediate (Pre-Engineering)
                     </h3>
-                    <p className="text-primary font-semibold mb-2">The City College</p>
+                    <p className="text-accent font-semibold mb-2">The City College</p>
                     <div className="flex items-center space-x-4 text-muted-foreground mb-2 text-sm">
                       <div className="flex items-center space-x-1">
                         <Calendar className="h-4 w-4" />
@@ -119,22 +119,22 @@ export default function ResumePage() {
                 {/* Matriculation */}
                 <div className="relative pl-16 group hover:translate-x-4 transition-all duration-500">
                   <div
-                    className="absolute left-4 w-5 h-5 bg-chart-3 rounded-full animate-ping"
+                    className="absolute left-4 w-5 h-5 bg-accent rounded-full animate-ping"
                     style={{ animationDelay: "1000ms" }}
                   ></div>
-                  <div className="absolute left-4 w-5 h-5 bg-chart-3 rounded-full shadow-lg shadow-chart-3/50"></div>
-                  <div className="bg-gradient-to-r from-chart-3/5 to-accent/5 p-6 rounded-xl border-l-4 border-chart-3 group-hover:shadow-xl transition-all duration-500">
-                    <h3 className="font-bold text-xl text-chart-3 mb-2 group-hover:scale-105 transition-transform duration-300">
+                  <div className="absolute left-4 w-5 h-5 bg-accent rounded-full shadow-lg shadow-accent/50"></div> {/*this will change*/}
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-6 rounded-xl border-l-4 border-primary group-hover:shadow-xl transition-all duration-500">
+                    <h3 className="font-bold text-xl text-primary mb-4 group-hover:scale-105 transition-transform duration-300">
                       Matriculation
                     </h3>
-                    <p className="text-primary font-semibold mb-2">The City School</p>
+                    <p className="text-accent font-semibold mb-2">The City School</p>
                     <div className="flex items-center space-x-4 text-muted-foreground mb-2 text-sm">
                       <div className="flex items-center space-x-1">
                         <Calendar className="h-4 w-4" />
                         <span>2019 – 2021</span>
                       </div>
                     </div>
-                    <div className="inline-block bg-chart-3/10 text-chart-3 px-3 py-1 rounded-full font-semibold text-sm">
+                    <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold text-sm">
                       Percentage: 95%
                     </div>
                   </div>
@@ -157,9 +157,7 @@ export default function ResumePage() {
                 <div className="group hover:translate-x-2 transition-all duration-500">
                   <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-6 rounded-xl border-l-4 border-accent group-hover:shadow-xl transition-all duration-500">
                     <p className="text-muted-foreground leading-relaxed text-lg">
-                      Driven Computer Systems Engineering student specializing in Data Analysis. Passionate about data
-                      science and committed to continuous learning in new technologies. Aiming to leverage technical and
-                      analytical skills to deliver data-driven solutions.
+                      AI Engineer skilled in Machine Learning, Deep Learning, NLP, and LLMs. Adept at developing and deploying AI-driven applications using Python, FastAPI, and SQL. Experienced in end-to-end model development, API integration, and visualization with Matplotlib and Seaborn. Passionate about building scalable, production-ready systems that transform data into actionable insights and measurable business impact
                     </p>
                   </div>
                 </div>
@@ -202,8 +200,8 @@ export default function ResumePage() {
 
                 {/* Career Objective */}
                 <div className="group hover:translate-x-2 transition-all duration-500">
-                  <div className="bg-gradient-to-r from-chart-3/5 to-primary/5 p-6 rounded-xl border-l-4 border-chart-3 group-hover:shadow-xl transition-all duration-500">
-                    <h3 className="font-bold text-xl text-chart-3 mb-4 group-hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-6 rounded-xl border-l-4 border-primary group-hover:shadow-xl transition-all duration-500">
+                    <h3 className="font-bold text-xl text-primary mb-4 group-hover:scale-105 transition-transform duration-300">
                       Career Objective
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -216,8 +214,8 @@ export default function ResumePage() {
 
                 {/* Contact Info */}
                 <div className="group hover:translate-x-2 transition-all duration-500">
-                  <div className="bg-gradient-to-r from-accent/5 to-chart-3/5 p-6 rounded-xl border-l-4 border-accent group-hover:shadow-xl transition-all duration-500">
-                    <h3 className="font-bold text-xl text-accent mb-4 group-hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-6 rounded-xl border-l-4 border-primary group-hover:shadow-xl transition-all duration-500">
+                    <h3 className="font-bold text-xl text-primary mb-4 group-hover:scale-105 transition-transform duration-300">
                       Contact Information
                     </h3>
                     <div className="space-y-2 text-muted-foreground">
