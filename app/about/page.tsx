@@ -9,7 +9,7 @@ export default function AboutPage() {
   const [typedText, setTypedText] = useState("")
   const [aboutTypedText, setAboutTypedText] = useState("")
   const [skillsVisible, setSkillsVisible] = useState(false)
-  const fullText = "ML Engineer, Data Analyst"
+  const fullText = "ML Engineer"
   const aboutFullText = "About Me"
 
   useEffect(() => {
@@ -46,31 +46,36 @@ export default function AboutPage() {
   }, [])
 
   const skills = [
-    { name: "Python", logo: "🐍", level: 90, category: "Programming" },
-    { name: "Java", logo: "☕", level: 80, category: "Programming" },
-    { name: "C++", logo: "⚡", level: 75, category: "Programming" },
-    { name: "MySQL", logo: "🗄️", level: 85, category: "Database" },
-    { name: "FastAPI", logo: "🚀", level: 88, category: "Framework" },
-    { name: "Docker", logo: "🐳", level: 70, category: "DevOps" },
-    { name: "Git", logo: "📝", level: 85, category: "Tools" },
-    { name: "Power BI", logo: "📊", level: 90, category: "Analytics" },
-    { name: "Pandas", logo: "🐼", level: 92, category: "Data Science" },
-    { name: "NumPy", logo: "🔢", level: 88, category: "Data Science" },
-    { name: "Scikit-learn", logo: "🤖", level: 85, category: "ML" },
-    { name: "Matplotlib", logo: "📈", level: 80, category: "Visualization" },
-    { name: "Seaborn", logo: "🎨", level: 82, category: "Visualization" },
-    { name: "Streamlit", logo: "⚡", level: 75, category: "Framework" },
-    { name: "HTML", logo: "🌐", level: 70, category: "Web" },
-    { name: "CSS", logo: "🎨", level: 68, category: "Web" },
+    { name: "Python",   category: "Programming" },
+    { name: "Java",  category: "Programming" },
+    { name: "C++",  category: "Programming" },
+    { name: "MySQL",   category: "Database" },
+    { name: "FastAPI", category: "Framework" },
+    { name: "Docker",   category: "DevOps" },
+    { name: "Git",  category: "Tools" },
+    { name: "Power BI",   category: "Analytics" },
+    { name: "Pandas",  category: "Data Science" },
+    { name: "NumPy",   category: "Data Science" },
+    { name: "Scikit-learn",   category: "ML" },
+    { name: "TensorFlow",   category: "DL" },
+    { name: "LangChain",   category: "GenAI" },
+    { name: "Matplotlib",   category: "Visualization" },
+    { name: "Seaborn",  category: "Visualization" },
+    { name: "Streamlit",   category: "Framework" },
+    { name: "HTML", category: "Web" },
+    { name: "CSS",   category: "Web" },
+    
+
+
   ]
 
   const interests = [
-    { icon: "🤖", title: "Machine Learning & AI", desc: "Building intelligent systems" },
-    { icon: "📊", title: "Data Analysis & Visualization", desc: "Extracting insights from data" },
-    { icon: "🚀", title: "API Development using FastAPI", desc: "Creating robust web services" },
-    { icon: "🐳", title: "Deployment & Docker", desc: "Containerized applications" },
-    { icon: "💼", title: "Business Intelligence", desc: "Data-driven decision making" },
-    { icon: "🔮", title: "Predictive Analytics", desc: "Forecasting future trends" },
+    {  title: "Machine Learning & AI", desc: "Building intelligent systems" },
+    {  title: "Data Analysis & Visualization", desc: "Extracting insights from data" },
+    {  title: "API Development using FastAPI", desc: "Creating robust web services" },
+    {  title: "Deployment & Docker", desc: "Containerized applications" },
+    {  title: "Business Intelligence", desc: "Data-driven decision making" },
+    {  title: "Predictive Analytics", desc: "Forecasting future trends" },
   ]
 
   const stats = [
@@ -121,20 +126,18 @@ export default function AboutPage() {
             <Card className="hover:scale-105 transition-all duration-500 hover:shadow-xl animate-slide-in-left">
               <CardHeader className="bg-gradient-to-r from-primary/10 to-accent/10">
                 <CardTitle className="flex items-center space-x-2">
-                  <span className="text-2xl">👨‍💻</span>
+                  {/* <span className="text-2xl"></span> */}
                   <span>Personal Information</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 p-6">
                 <div className="mb-6 p-4 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg border-l-4 border-primary">
                   <h4 className="font-semibold text-primary mb-2 flex items-center">
-                    <span className="text-lg mr-2">💼</span>
+                    {/* <span className="text-lg mr-2"></span> */}
                     Professional Summary
                   </h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Driven Computer Systems Engineering student specializing in Data Analysis. Passionate about data
-                    science and committed to continuous learning in new technologies. Aiming to leverage technical and
-                    analytical skills to deliver data-driven solutions.
+                    AI Engineer skilled in Machine Learning, Deep Learning, NLP, and LLMs. Adept at developing and deploying AI-driven applications using Python, FastAPI, and SQL. Experienced in end-to-end model development, API integration, and visualization with Matplotlib and Seaborn. Passionate about building scalable, production-ready systems that transform data into actionable insights and measurable business impact.
                   </p>
                 </div>
 
@@ -163,7 +166,7 @@ export default function AboutPage() {
             >
               <CardHeader className="bg-gradient-to-r from-accent/10 to-primary/10">
                 <CardTitle className="flex items-center space-x-2">
-                  <span className="text-2xl">🌍</span>
+                  {/* <span className="text-2xl">🌍</span> */}
                   <span>Languages</span>
                 </CardTitle>
               </CardHeader>
@@ -197,7 +200,7 @@ export default function AboutPage() {
             >
               <CardHeader className="bg-gradient-to-r from-primary/10 to-accent/10">
                 <CardTitle className="flex items-center space-x-2">
-                  <span className="text-2xl">💡</span>
+                  {/* <span className="text-2xl">💡</span> */}
                   <span>I am Interested In</span>
                 </CardTitle>
               </CardHeader>
@@ -210,7 +213,7 @@ export default function AboutPage() {
                     >
                       <div className="flex items-start space-x-3">
                         <span className="text-2xl group-hover:scale-125 transition-transform duration-300">
-                          {interest.icon}
+                          {/* {interest.icon} */}
                         </span>
                         <div>
                           <div className="font-medium text-sm group-hover:text-primary transition-colors duration-300">
@@ -232,7 +235,7 @@ export default function AboutPage() {
             <Card className="hover:scale-105 transition-all duration-500 hover:shadow-xl animate-slide-in-right">
               <CardHeader className="bg-gradient-to-r from-accent/10 to-primary/10">
                 <CardTitle className="flex items-center space-x-2">
-                  <span className="text-2xl">⚡</span>
+                  {/* <span className="text-2xl">⚡</span> */}
                   <span>Technical Skills</span>
                 </CardTitle>
               </CardHeader>
@@ -246,7 +249,7 @@ export default function AboutPage() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
                           <span className="text-3xl group-hover:scale-125 transition-transform duration-300 group-hover:rotate-12">
-                            {skill.logo}
+                            {/* {skill.logo} */}
                           </span>
                           <div>
                             <span className="font-medium group-hover:text-primary transition-colors duration-300">
@@ -256,7 +259,7 @@ export default function AboutPage() {
                           </div>
                         </div>
                         <span className="text-sm text-muted-foreground font-bold group-hover:text-primary transition-colors duration-300">
-                          {skill.level}%
+                          {/* {skill.level}% */}
                         </span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
@@ -265,7 +268,7 @@ export default function AboutPage() {
                             skillsVisible ? "scale-x-100" : "scale-x-0"
                           } group-hover:animate-pulse`}
                           style={{
-                            width: `${skill.level}%`,
+                            // width: `${skill.level}%`,
                             transitionDelay: `${index * 100}ms`,
                           }}
                         ></div>
