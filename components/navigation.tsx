@@ -20,64 +20,54 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" className="relative">
-              <span className="text-2xl font-bold text-white bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                MH
-              </span>
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 blur-sm rounded"></div>
+    <>
+      {/* 🌐 Floating Navbar for Desktop */}
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 bg-background/70 backdrop-blur-xl border border-border shadow-md rounded-full px-8 py-2 z-50 hidden md:block">
+        <div className="flex items-center space-x-8">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                pathname === item.href ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              {item.name}
             </Link>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`px-3 py-2 text-sm font-medium transition-colors hover:text-primary ${
-                    pathname === item.href ? "text-primary border-b-2 border-primary" : "text-muted-foreground"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
+          ))}
         </div>
+      </nav>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card rounded-lg mt-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-primary ${
-                    pathname === item.href ? "text-primary bg-primary/10" : "text-muted-foreground"
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
+      {/* 📱 Mobile Navigation (Floating Menu Button) */}
+      <div className="fixed top-4 right-4 z-50 md:hidden">
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+          className="rounded-full backdrop-blur-xl border border-border shadow-sm"
+        >
+          {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </Button>
       </div>
-    </nav>
+
+      {/* 📋 Mobile Menu Drawer */}
+      {isOpen && (
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 w-[90%] bg-card border border-border rounded-2xl shadow-lg py-4 text-center backdrop-blur-xl md:hidden z-40 animate-in fade-in slide-in-from-top-5">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={`block px-3 py-2 text-base font-medium rounded-lg transition-colors hover:text-primary hover:bg-primary/5 ${
+                pathname === item.href ? "text-primary bg-primary/10" : "text-muted-foreground"
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      )}
+    </>
   )
 }
