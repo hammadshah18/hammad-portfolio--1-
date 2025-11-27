@@ -50,7 +50,7 @@ export default function ResumePage() {
                 className="group relative overflow-hidden bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/25 animate-bounce-slow"
                 asChild
               >
-                <Link href="/Hammad_CV_J.pdf" download>
+                <Link href="/HammadResume.pdf" download>
                   <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                   Download Resume
                 </Link>

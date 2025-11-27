@@ -99,7 +99,7 @@ export default function HomePage() {
                   className="group bg-transparent border-primary text-primary hover:bg-primary hover:text-white"
                   asChild
                 >
-                  <Link href="/Hammad_CV_J.pdf" download>
+                  <Link href="/HammadResume.pdf" download>
                     <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                     Download CV
                   </Link>
