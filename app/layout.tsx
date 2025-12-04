@@ -5,6 +5,9 @@ import "./globals.css"
 import Navigation from "@/components/navigation"
 // import LightRays from "@/components/lightrays"
 
+  
+
+
 const geistSans = Geist({
   subsets: ["latin"],
   variable: "--font-geist-sans",
@@ -46,6 +49,8 @@ export default function RootLayout({
   />
 </div> */}
         <Navigation />
+        
+       
         <main className="pt-16">{children}</main>
       </body>
     </html>

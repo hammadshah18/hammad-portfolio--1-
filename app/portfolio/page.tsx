@@ -122,9 +122,19 @@ export default function PortfolioPage() {
       demoLink: "https://uk-universities-sentiment-analysis-rating-prediction-dashboard.streamlit.app/",
       githubLink: "https://github.com/hammadshah18/UK-Universities-Sentiment-Analysis-Rating-Prediction-Dashboard",
     },
+    {
+      title: "AI-Assistant Developer",
+      description:
+        "I developed a full-stack AI Assistant using FastAPI, LangChain, and Google Gemini that delivers real-time conversational intelligence with long-term memory.The system stores chats, retrieves past context, and generates intelligent responses tailored to the user",
+      technologies: ["Langchain", "FastAPI", "Next.js", "Google Gemini-api"],
+      category: "GenAI",
+      image: "/AI-assistant.png",
+      demoLink: "https://ai-assistant-nax50s4zx-muhammad-hammads-projects-8134d960.vercel.app/",
+      githubLink: "https://github.com/hammadshah18/AI-Assistant",
+    },
   ]
 
-  const categories = ["All", "Machine Learning","NLP" ,"Data Visualization", "API Development"]
+  const categories = ["All", "Machine Learning","NLP" ,"Data Visualization", "API Development","GenAI"]
 
   const filteredProjects =
     activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)

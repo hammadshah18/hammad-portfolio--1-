@@ -7,6 +7,7 @@ import { useState, useEffect } from "react"
 import Lottie from "lottie-react"
 import animationData from "../public/animation.json"
 
+
 export default function HomePage() {
   const [typedText, setTypedText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -144,8 +145,14 @@ export default function HomePage() {
 
       {/* ================= SERVICES SECTION ================= */}
       <section className="py-24 bg-background border-t border-border">
+        
+  
+
+  
+
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-10 text-white">What I Do</h2>
+  
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: <Brain className="h-10 w-10 text-primary" />, title: "Machine Learning", desc: "Design, train, and deploy predictive models for real-world problems." },
@@ -161,6 +168,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+        
       </section>
 
       {/* ================= CERTIFICATES SECTION ================= */}
@@ -206,6 +214,7 @@ export default function HomePage() {
 
       {/* ================= FREELANCE SHOWCASE SECTION ================= */}
       <section className="py-24 bg-primary/5 border-t border-border">
+      
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-10 text-white">Freelance Showcase</h2>
           <div className="grid sm:grid-cols-2 gap-8">
