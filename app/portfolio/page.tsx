@@ -132,9 +132,19 @@ export default function PortfolioPage() {
       demoLink: "https://ai-assistant-nax50s4zx-muhammad-hammads-projects-8134d960.vercel.app/",
       githubLink: "https://github.com/hammadshah18/AI-Assistant",
     },
+    {
+      title: "Aivora",
+      description:
+        "A full‑stack conversational AI application built with FastAPI (backend) and Next.js (frontend), enabling secure user authentication and real‑time chat powered by Google Gemini-2.5-flash.It features modern UI with dark/light themes, responsive design, chat‑history control (create/edit/delete chats), and full CRUD support for chats and messages through a SQLite database.",
+      technologies: ["Langchain", "FastAPI", "Next.js", "Google Gemini-api"],
+      category: "GenAI",
+      image: "/aivoira.png",
+      demoLink: "https://conversationalchatbot-99yb.vercel.app/",
+      githubLink: "https://github.com/hammadshah18/conversationalchatbot",
+    },
   ]
 
-  const categories = ["All", "Machine Learning","NLP" ,"Data Visualization", "API Development","GenAI"]
+  const categories = ["All", "Machine Learning","NLP" ,"Data Visualization"," Deep Learning", "API Development","GenAI"]
 
   const filteredProjects =
     activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)
